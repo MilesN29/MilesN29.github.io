@@ -1,3 +1,75 @@
-body{
-    color:red;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('digital-dreams-1155366.jpg');
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+header {
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+.top_nav_bar {
+    position: fixed;
+    padding:30px;
+}
+
+.nav_links {
+    display: flex;
+    align-items: center;
+}
+
+.nav_links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+
+a {
+
+    color: inherit;
+}
+
+a:hover {
+    color: #007bff;
+
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #383838;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    line-height: 1.6;
+}
+
+
+ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #696969;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
