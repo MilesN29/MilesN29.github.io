@@ -81,4 +81,7 @@ footer {
     embed{
         height: 550px;
     }
+    footer{
+        display: none;
+    }
 }

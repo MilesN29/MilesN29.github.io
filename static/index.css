@@ -80,4 +80,7 @@ footer {
     .top_nav_bar a{
         font-size: large;
     }
+    footer{
+        display: none;
+    }
 }
