@@ -11,7 +11,7 @@ const Home = () => {
                 <h1>Miles Newland</h1>
             </header>
             <section>
-                <h1>Doing some fixe, be back up shortly</h1>
+                <h1>Doing some fixes, be back up shortly</h1>
             </section>
             <Footer />
         </>
