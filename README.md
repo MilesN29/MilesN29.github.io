@@ -1,2 +1,1 @@
-# MilesN29.github.io
-This is my WebPage.
+# This is my webpage

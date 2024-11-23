@@ -1,27 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+html{
+    height: 100%; 
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
-    background: url('keyboard.jpg');
-    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    background: url('../assets/pexels-pixabay-270366.jpg');
+    background-size: cover; 
     background-repeat: no-repeat;
+    background-position: center center;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 header {
+
     text-align: center;
     padding: 20px 0;
     background-color: rgba(25, 25, 25, 0.5);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: larger;
 }
 
 .top_nav_bar {
     position: fixed;
-    padding: 30px;
+    padding:30px;
 }
 
 .nav_links {
@@ -33,7 +40,11 @@ header {
     margin-left: 20px;
     text-decoration: none;
     font-size: 16px;
-    color: white;
+}
+
+
+a {
+    color: inherit;
 }
 
 a:hover {
@@ -53,6 +64,7 @@ p {
     line-height: 1.6;
 }
 
+
 ul li {
     margin-bottom: 10px;
 }
@@ -64,55 +76,16 @@ footer {
     color: #fff;
     position: fixed;
     bottom: 0;
-    width: 10%;
+    width: 100%;
 }
-
-input[type="submit"] {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-input[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 95%;
-    padding: 10px;
-    margin: 5px 0 20px 0;
-    border: none;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.6);
-}
-
 @media (max-width: 450px) {
-    .top_nav_bar {
+    .top_nav_bar{
         position: relative;
     }
-    .top_nav_bar a {
+    .top_nav_bar a{
         font-size: large;
     }
-    embed {
-        height: 550px;
-    }
-    footer {
+    footer{
         display: none;
     }
 }
