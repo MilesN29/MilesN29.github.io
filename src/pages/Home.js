@@ -11,9 +11,7 @@ const Home = () => {
                 <h1>Miles Newland</h1>
             </header>
             <section>
-                <h2>Quick Intro</h2>
-                <p>Hey there! 😄 I'm Miles Newland, a Computer Science student at the University of Pittsburgh...</p>
-                {/* Add other content here */}
+                <h1>Doing some fixe, be back up shortly</h1>
             </section>
             <Footer />
         </>
