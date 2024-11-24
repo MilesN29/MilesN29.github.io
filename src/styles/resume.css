@@ -1,22 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 
-body.home-page {
+body {
     min-height: 100vh; /* body covers at least the full viewport */
     height: auto; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background: #383838 url('../assets/pexels-pixabay-270366.jpg') no-repeat center center;
     background-size: cover;
-
-    background-repeat: no-repeat;
-    background-position: center center;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: white;
 }
 
-.home-header {
+
+.resume-header {
     text-align: center;
     padding: 20px 0;
     background-color: rgba(25, 25, 25, 0.5);
@@ -24,15 +21,11 @@ body.home-page {
     font-size: larger;
 }
 
-.home-section {
+.resume-section {
     max-width: 750px;
     margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
     background-color: #383838;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.home-section p {
-    line-height: 1.6;
 }

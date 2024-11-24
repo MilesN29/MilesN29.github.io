@@ -5,16 +5,18 @@ import '../styles/index.css';
 
 const Home = () => {
     return (
-        <>
+        <div className="home-page">
             <Navbar />
-            <header>
+            <header className="home-header">
                 <h1>Miles Newland</h1>
             </header>
-            <section>
-                <h1>Doing some fixes, be back up shortly</h1>
+            <section className="home-section">
+                <p>Hi! I'm Miles</p>
+                <p>Welcome to my website! I hope your doing well! 😄</p>
+                <p>I'm an aspiring software engineer based in Pittsburgh PA.</p>
             </section>
             <Footer />
-        </>
+        </div>
     );
 };
 

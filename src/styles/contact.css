@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+
 body {
+    min-height: 100vh; /* body covers at least the full viewport */
+    height: auto; 
+    background: #383838 url('../assets/pexels-pixabay-270366.jpg') no-repeat center center;
+    background-size: cover;
+
     font-family: 'Roboto', sans-serif;
-    background: url('../assets/keyboard.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
@@ -106,12 +111,15 @@ textarea:focus {
     .top_nav_bar {
         position: relative;
     }
+
     .top_nav_bar a {
         font-size: large;
     }
+
     embed {
         height: 550px;
     }
+
     footer {
         display: none;
     }
