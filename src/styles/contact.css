@@ -1,22 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-
-body {
-    min-height: 100vh; /* body covers at least the full viewport */
-    height: auto; 
-    background: #383838 url('../assets/pexels-pixabay-270366.jpg') no-repeat center center;
-    background-size: cover;
-
-    font-family: 'Roboto', sans-serif;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: white;
-}
-
-header {
+.contact-header {
     text-align: center;
     padding: 20px 0;
     background-color: rgba(25, 25, 25, 0.5);
@@ -24,28 +6,7 @@ header {
     font-size: larger;
 }
 
-.top_nav_bar {
-    position: fixed;
-    padding: 30px;
-}
-
-.nav_links {
-    display: flex;
-    align-items: center;
-}
-
-.nav_links a {
-    margin-left: 20px;
-    text-decoration: none;
-    font-size: 16px;
-    color: white;
-}
-
-a:hover {
-    color: #007bff;
-}
-
-section {
+.contact-section {
     max-width: 750px;
     margin: 20px auto;
     padding: 20px;
@@ -54,23 +15,6 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-p {
-    line-height: 1.6;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: rgba(25, 25, 25, 0.5);
-    color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 10%;
-}
 
 input[type="submit"] {
     background-color: #007bff;
@@ -105,22 +49,4 @@ input[type="email"]:focus,
 textarea:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.6);
-}
-
-@media (max-width: 450px) {
-    .top_nav_bar {
-        position: relative;
-    }
-
-    .top_nav_bar a {
-        font-size: large;
-    }
-
-    embed {
-        height: 550px;
-    }
-
-    footer {
-        display: none;
-    }
 }

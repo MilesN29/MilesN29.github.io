@@ -1,18 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 
-body {
-    min-height: 100vh; /* body covers at least the full viewport */
-    height: auto; 
-    background: #383838 url('../assets/pexels-pixabay-270366.jpg') no-repeat center center;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: white;
-}
-
-
 .resume-header {
     text-align: center;
     padding: 20px 0;

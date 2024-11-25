@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import '../styles/resume.css';
 import pdfFile from '../assets/Resume Fall 2024.pdf';
 
 const Resume = () => {
