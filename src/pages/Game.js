@@ -1,28 +1,30 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Core from '../game/Core';
 import '../styles/game.css';
 
 function Game() {
     const [highScores, setHighScores] = useState([]);
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
-    const [isGameOver, setGameOver] = useState(true);
+    const [isGameOver, setGameOver] = useState(false);
+    const [score, setScore] = useState(0);
 
     useEffect(() => {
         const fetchHighScores = async () => {
-            try {
-                const response = await fetch('https://highscore-backend.onrender.com/highscores');
-                if (!response.ok) {
-                    throw new Error('Failed to fetch high scores');
-                }
-                const data = await response.json();
-                setHighScores(data);
-            } catch (err) {
-                setError(err.message);
-            } finally {
-                setLoading(false);
-            }
+
+            // try {
+            //     const response = await fetch('https://highscore-backend.onrender.com/highscores');
+            //     if (!response.ok) {
+            //         throw new Error('Failed to fetch high scores');
+            //     }
+            //     const data = await response.json();
+            //     setHighScores(data);
+            // } catch (err) {
+            //     setError(err.message);
+            // } finally {
+            //     setLoading(false);
+            // }
         };
 
         fetchHighScores();
@@ -33,7 +35,6 @@ function Game() {
             <Navbar />
 
             <header className='game-header'>
-             <h1>Welcome to the Game</h1>
             </header>
             <section className='game-section'>
                 {isGameOver ? (
@@ -42,20 +43,29 @@ function Game() {
                     ) : error ? (
                         <p>Error: {error}</p>
                     ) : (
-                        <ul>
-                            {highScores.map((score, index) => (
-                                <li key={index}>
-                                    {score.name}: {score.score}
+                        <div>
+                            <ul>
+                                <li>
+                                    Score: {score}
                                 </li>
-                            ))}
-                        </ul>
+                                {highScores.map((score, index) => (
+                                    <li key={index}>
+                                        {score.name}: {score.score}
+                                    </li>
+                                ))}
+                            </ul>
+                            <button onClick={() => setGameOver(false)}>Play Again?</button>
+                        </div>
                     )
                 ) : (
-                    <p>Playing game</p>
+                    <div>
+                        <Core setGameOver={setGameOver} score={score} setScore={setScore} />
+                        {/*pass in the game state and score to the core game*/}
+                    </div>
                 )}
             </section>
 
-            <Footer />
+
         </div>
     );
 }
