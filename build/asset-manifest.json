@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.6728933d.css",
-    "main.js": "/static/js/main.236c40ca.js",
-    "static/media/pexels-pixabay-270366.jpg": "/static/media/pexels-pixabay-270366.076797011eaf709e562b.jpg",
-    "static/media/Resume Fall 2024.pdf": "/static/media/Resume Fall 2024.44af8ef38633831b8b11.pdf",
+    "main.css": "/static/css/main.44ace467.css",
+    "main.js": "/static/js/main.a771bae4.js",
+    "static/media/Pitt_image.jpeg": "/static/media/Pitt_image.5bada109f13290f9fd18.jpeg",
+    "static/media/Resume Spring 2025.pdf": "/static/media/Resume Spring 2025.dbf3d99a46423824c1e6.pdf",
     "index.html": "/index.html",
-    "main.6728933d.css.map": "/static/css/main.6728933d.css.map",
-    "main.236c40ca.js.map": "/static/js/main.236c40ca.js.map"
+    "main.44ace467.css.map": "/static/css/main.44ace467.css.map",
+    "main.a771bae4.js.map": "/static/js/main.a771bae4.js.map"
   },
   "entrypoints": [
-    "static/css/main.6728933d.css",
-    "static/js/main.236c40ca.js"
+    "static/css/main.44ace467.css",
+    "static/js/main.a771bae4.js"
   ]
 }

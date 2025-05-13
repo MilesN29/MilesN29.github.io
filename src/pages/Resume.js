@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import pdfFile from '../assets/Resume Fall 2024.pdf';
+import pdfFile from '../assets/Resume Spring 2025.pdf';
 
 const Resume = () => {
     return (

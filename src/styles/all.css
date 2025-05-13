@@ -7,7 +7,7 @@ html{
 body {
     min-height: 100vh; /* body covers at least the full viewport */
     height: auto; 
-    background: #383838 url('../assets/pexels-pixabay-270366.jpg') no-repeat center center;
+    background: #383838 url('../assets/Pitt_image.jpeg') no-repeat center center;
     background-size: cover;
 
     font-family: 'Roboto', sans-serif;
