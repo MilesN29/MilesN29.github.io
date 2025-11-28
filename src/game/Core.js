@@ -138,8 +138,18 @@ class GameScene extends Phaser.Scene {
 
 const Core = (props) => {
     const gameRef = useRef(null); // reference for the game container
+    const containerRef = useRef(null);
 
     useEffect(() => {
+        // prevent default browser behavior for game keys
+        const handleKeyDown = (e) => {
+            if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'Space', ' '].includes(e.key) || e.code === 'Space') {
+                e.preventDefault();
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+
         const config = {
             type: Phaser.AUTO,
             width: 800,
@@ -159,6 +169,7 @@ const Core = (props) => {
         gameRef.current = game;
 
         return () => {
+            window.removeEventListener('keydown', handleKeyDown);
             game.destroy(true);
         };
     }, []);
@@ -181,7 +192,7 @@ const Core = (props) => {
                 props.setScore(gameRef.current.scene.scenes[0].scoreLabel.getScore());
                 clearInterval(interval);
             }
-        }, 5000); // check every 5 seconda
+        }, 5000); // check every 5 seconds
 
         return () => clearInterval(interval);
     }, [props]);
@@ -189,13 +200,20 @@ const Core = (props) => {
 
 
     return (
-        <div>
+        <div ref={containerRef}>
             <div id="phaser-container" ref={gameRef} className="core-game"></div>
-            <button onClick={() => {
-                props.setScore(gameRef.current.scene.scenes[0].scoreLabel.getScore());
-                props.setGameOver(true);
-            }}>End Game</button>
-        </div >
+            <div className="flex justify-center mt-4">
+                <button 
+                    onClick={() => {
+                        props.setScore(gameRef.current.scene.scenes[0].scoreLabel.getScore());
+                        props.setGameOver(true);
+                    }}
+                    className="px-6 py-3 bg-white/10 text-white font-medium rounded-xl border border-white/10 hover:bg-white/20 hover:border-white/20 transition-all"
+                >
+                    End Game
+                </button>
+            </div>
+        </div>
     );
     
 };

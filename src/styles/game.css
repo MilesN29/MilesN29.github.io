@@ -1,12 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-.game-page {
-    overflow: hidden;
-}
-
-.game-page footer{
-
-}
+/* Game Page Styles */
 
 .core-game {
     display: flex;
@@ -17,22 +9,17 @@
     overflow: hidden;
     position: relative;
 }
-.game-header {
-    text-align: center;
-    padding: 40px 0;
-    background-color: rgba(25, 25, 25, 0.5);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: larger;
-}
 
 .game-section {
-    max-width: 900px;
-    margin: 0px auto;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #383838;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 400px;
+}
+
+/* Ensure the Phaser canvas is properly styled */
+.game-section canvas {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
 }
