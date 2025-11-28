@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.44ace467.css",
-    "main.js": "/static/js/main.a771bae4.js",
+    "main.css": "/static/css/main.8b023cc7.css",
+    "main.js": "/static/js/main.b3e30f9d.js",
     "static/media/Pitt_image.jpeg": "/static/media/Pitt_image.5bada109f13290f9fd18.jpeg",
     "static/media/Resume Spring 2025.pdf": "/static/media/Resume Spring 2025.dbf3d99a46423824c1e6.pdf",
     "index.html": "/index.html",
-    "main.44ace467.css.map": "/static/css/main.44ace467.css.map",
-    "main.a771bae4.js.map": "/static/js/main.a771bae4.js.map"
+    "main.8b023cc7.css.map": "/static/css/main.8b023cc7.css.map",
+    "main.b3e30f9d.js.map": "/static/js/main.b3e30f9d.js.map"
   },
   "entrypoints": [
-    "static/css/main.44ace467.css",
-    "static/js/main.a771bae4.js"
+    "static/css/main.8b023cc7.css",
+    "static/js/main.b3e30f9d.js"
   ]
 }
