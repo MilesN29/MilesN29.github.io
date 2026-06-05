@@ -104,7 +104,7 @@ const Home = () => {
                         variants={itemVariants}
                         className="text-xl sm:text-2xl text-gray-400 mb-8 max-w-2xl mx-auto"
                     >
-                        Aspiring Software Engineer based in Pittsburgh, PA.
+                        Platform Engineer based in Pittsburgh, PA.
                         <br />
                         <span className="text-gray-500 text-sm">"Will Happening Happening Happened"</span>
 
