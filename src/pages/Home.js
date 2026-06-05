@@ -30,51 +30,6 @@ const Home = () => {
         },
     };
 
-    const skills = [
-        { name: 'PHP', color: 'from-cyan-400 to-blue-500' },
-        { name: 'JS/TS', color: 'from-yellow-400 to-orange-500' },
-        { name: 'Java', color: 'from-blue-400 to-green-500' },
-        { name: 'Python', color: 'from-red-400 to-orange-500' },
-        { name: 'Git', color: 'from-orange-400 to-red-500' },
-        { name: 'SQL', color: 'from-purple-400 to-pink-500' },
-        { name: 'GCP & AWS', color: 'from-pink-400 to-purple-500' },
-
-    ];
-
-    const quickLinks = [
-        { 
-            title: 'View Resume', 
-            description: 'Check out my experience and skills',
-            path: '/resume',
-            icon: (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-            ),
-        },
-        { 
-            title: 'Get in Touch', 
-            description: "Let's connect and chat",
-            path: '/contact',
-            icon: (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-            ),
-        },
-        { 
-            title: 'Play My Game', 
-            description: 'Check out my Phaser.js game',
-            path: '/game',
-            icon: (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-            ),
-        },
-    ];
-
     return (
         <div className="min-h-screen">
             <Navbar />
